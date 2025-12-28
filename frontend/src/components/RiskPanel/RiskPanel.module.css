@@ -1,0 +1,75 @@
+.container {
+  padding: var(--spacing-md);
+}
+
+.header {
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.positionInfo {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+.positionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.positionLabel {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+.positionSide {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.long {
+  background-color: var(--color-bullish-bg);
+  color: var(--color-bullish);
+}
+
+.short {
+  background-color: var(--color-bearish-bg);
+  color: var(--color-bearish);
+}
+
+.positionDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.positionRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-sm);
+}
+
+.positionRow span:first-child {
+  color: var(--text-secondary);
+}
+
+.positive {
+  color: var(--color-bullish);
+}
+
+.negative {
+  color: var(--color-bearish);
+}

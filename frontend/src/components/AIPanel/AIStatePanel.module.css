@@ -1,0 +1,59 @@
+.container {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header {
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.stateDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.bullish {
+  background-color: var(--color-bullish-bg);
+  border: 1px solid var(--color-bullish);
+}
+
+.bearish {
+  background-color: var(--color-bearish-bg);
+  border: 1px solid var(--color-bearish);
+}
+
+.noTrade {
+  background-color: var(--color-neutral-bg);
+  border: 1px solid var(--color-neutral);
+}
+
+.stateText {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bullish .stateText {
+  color: var(--color-bullish);
+}
+
+.bearish .stateText {
+  color: var(--color-bearish);
+}
+
+.noTrade .stateText {
+  color: var(--color-neutral);
+}

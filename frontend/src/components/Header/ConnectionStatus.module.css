@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.connected {
+  background-color: var(--color-bullish);
+  box-shadow: 0 0 8px var(--color-bullish);
+}
+
+.disconnected {
+  background-color: var(--color-bearish);
+  box-shadow: 0 0 8px var(--color-bearish);
+}
+
+.reconnecting {
+  background-color: var(--color-neutral);
+  box-shadow: 0 0 8px var(--color-neutral);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.label {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+}

@@ -1,0 +1,85 @@
+.container {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header {
+  margin-bottom: var(--spacing-sm);
+}
+
+.title {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-lg);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all var(--transition-fast);
+}
+
+.buyBtn,
+.sellBtn {
+  flex: 1;
+}
+
+.buyBtn {
+  background-color: var(--color-bullish);
+  color: white;
+}
+
+.buyBtn:hover:not(:disabled) {
+  background-color: #16a34a;
+}
+
+.sellBtn {
+  background-color: var(--color-bearish);
+  color: white;
+}
+
+.sellBtn:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+.standDownBtn {
+  width: 100%;
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.standDownBtn:hover:not(:disabled) {
+  background-color: var(--bg-hover);
+  border-color: var(--border-hover);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.disabledReason {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  text-align: center;
+}

@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--color-bearish);
+  border-radius: var(--radius-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-bearish);
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.reason {
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-xs);
+}
+
+.condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-xs);
+  font-size: var(--font-xs);
+}
+
+.condition.blocking {
+  background-color: rgba(239, 68, 68, 0.15);
+  border-left: 2px solid var(--color-bearish);
+}
+
+.condition.passing {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-left: 2px solid var(--color-bullish);
+}
+
+.conditionLabel {
+  color: var(--color-text-secondary);
+}
+
+.conditionValue {
+  font-family: var(--font-mono);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.condition.blocking .conditionValue {
+  color: var(--color-bearish);
+}
+
+.condition.passing .conditionValue {
+  color: var(--color-bullish);
+}
+
+.threshold {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  font-weight: normal;
+}
+
+.guidance {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: rgba(245, 158, 11, 0.15);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  color: #f59e0b;
+  line-height: 1.4;
+  margin-top: var(--spacing-xs);
+}
+
+.guidanceIcon {
+  flex-shrink: 0;
+  font-weight: bold;
+}

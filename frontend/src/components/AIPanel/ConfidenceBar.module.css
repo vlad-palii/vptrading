@@ -1,0 +1,46 @@
+.container {
+  margin-bottom: var(--spacing-md);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+
+.label {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
+
+.value {
+  font-size: var(--font-xs);
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.bar {
+  height: 4px;
+  background-color: var(--bg-tertiary);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.bullish {
+  background-color: var(--color-bullish);
+}
+
+.bearish {
+  background-color: var(--color-bearish);
+}
+
+.neutral {
+  background-color: var(--color-neutral);
+}

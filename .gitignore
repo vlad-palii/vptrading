@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+data/
+*.db
+*.db-journal
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# ML artifacts
+ml/data/historical/*.csv
+ml/model/*.bin
+ml/model/*.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Temporary
+tmp/
+temp/
